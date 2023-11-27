@@ -16,20 +16,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    signingConfigs {
-        signer {
-            //Q865M_Q115M_android11 Q81 NewPublic T60
-            storeFile file("D:\\Android12SignerGUI\\SignFiles\\T195\\platform.jks")
-            storePassword('android')
-            keyAlias('android')
-            keyPassword('android')
-        }
-    }
     buildTypes {
         debug {
             minifyEnabled false
-            signingConfig signingConfigs.signer
         }
         release { minifyEnabled false }
     }
