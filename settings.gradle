@@ -15,3 +15,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "mobileark5g"
 include ':app'
+
+include ':systemloglib'
+project(":systemloglib").projectDir = new File("E:\\githubCode\\SystemLog\\systemloglib")
+
